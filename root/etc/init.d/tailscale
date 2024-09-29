@@ -20,7 +20,7 @@ section_enabled() {
 
 custom_instance() {
 	local cfg="$1"
-	local acceptRoutes hostname acceptDNS advertiseExitNode advertiseRoutes s2s flags loginServer authkey std_out std_err
+	local acceptRoutes hostname acceptDNS advertiseExitNode exitNode advertiseRoutes s2s subnetRoutes flags loginServer authkey std_out std_err
 	local ARGS=" up --reset"
 
 	if ! section_enabled "$cfg"; then
